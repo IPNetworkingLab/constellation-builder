@@ -1,0 +1,16 @@
+[package]
+name = "constellation-builder"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+constellation = { path = "../constellation" }
+constellation-code = { path = "../constellation-code" }
+handover-filter = { path = "../handover-filter"}
+
+clap = { version = "4.6.1", features = ["derive"] }
+dune-core = { git = "https://github.com/nrybowski/DUNE.git", tag = "v0.3.0" }
+regex = "1.12.3"
+toml = "0.8.23"
+tracing = "0.1.44"
+tracing-subscriber = "0.3.23"
